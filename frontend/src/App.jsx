@@ -1,8 +1,13 @@
+import { Outlet } from "react-router-dom"
+import Home from "./pages/Home"
+import Navbar from "./shared/Navbar"
+
 function App() {
 
   return (
     <>
-      <h1 className="bg-black text-white w-full h-screen">App.js</h1>  
+      <Navbar/>
+      <Outlet/>
     </>
   )
 }

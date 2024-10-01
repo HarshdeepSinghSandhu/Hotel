@@ -8,7 +8,9 @@ export default {
     extend: {
       fontFamily: {
         raleway: ['Raleway', 'sans-serif'],
-        sans: ['Lato', 'sans-serif']
+        sans: ['Lato', 'sans-serif'],
+        julius: ['Julius Sans One', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },

@@ -1,17 +1,26 @@
-import React from 'react'
-import '../components/Home/home.css'
+import React from 'react';
+import '../components/Home/home.css';
+import Home_main from '../components/Home/Home_main';
+import Home_about from '../components/Home/Home_about';
+import Home_Exp from '../components/Home/Home_Exp';
+import Home_Services from '../components/Home/Home_Services';
+import Home_Gallery from '../components/Home/Home_Gallery';
+import Home_Rooms from '../components/Home/Home_Rooms';
 
 const Home = () => {
   return (
-    <div className='w-full h-screen hero relative flex flex-col justify-center items-center '>
-        <div className=' absolute bg-black w-full h-screen opacity-70'></div>
-        <div className='flex flex-col w-[70%] items-center text-center justify-center z-10'>
-            <h1 className='text-[50px] text-white font-bold mb-5 '>Welcome to Your Perfect Getaway</h1>
-            {/* <h2 className='text-zinc-300'>Discover our exquisite accommodations, world-class amenities, and personalized service that make every stay unforgettable.</h2> */}
-            <button className='flex bg-white text-black text-xl px-3 justify-center items-center py-3 rounded-full font-semibold'>Book now</button>
-        </div>
+    <>
+    <div className='w-full h-screen hero relative flex flex-col justify-center'>
+      <div className='absolute bg-black w-full h-screen opacity-70'></div>
+      <Home_main />
     </div>
-  )
-}
+      <Home_about/>
+      <Home_Exp/>
+      <Home_Rooms/>
+      <Home_Services/>
+      <Home_Gallery/>
+    </>
+  );
+};
 
-export default Home
+export default Home;

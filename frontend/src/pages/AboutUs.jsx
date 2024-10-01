@@ -20,7 +20,7 @@ const AboutUs = () => {
         <About_Content/>
       </div>
 
-      <div className='flex justify-center bg-zinc-100  items-center'>
+      <div className='flex justify-center bg-zinc-100 items-center'>
         <HotelInfo/>
       </div>
 

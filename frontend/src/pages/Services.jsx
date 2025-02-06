@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaKey, FaCar, FaHeart, FaLock, FaMoneyBill, FaBed, FaTshirt, FaWifi, FaTv, FaBolt, FaSnowflake, FaCreditCard, FaEnvelope, FaUserMd, FaBeer, FaBell, FaShower, FaWater, FaSmokingBan, FaPlane } from 'react-icons/fa';
 import Each_Service from '../components/Services/Each_Service';
+import Main_template from '../shared/Main_template';
 
 const services = [
   { icon: FaKey, text: 'Electronic Door Locks' },
@@ -29,15 +30,14 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="bg-gradient-to-br bg-zinc-100 min-h-screen py-12">
-      <div className="container mx-auto px-4 flex flex-col items-center justify-center">
-        <h2 className="text-4xl font-bold text-center m-10 mt-20  text-zinc-700 font-raleway">Our Services</h2>
+    <div className="flex flex-col justify-center items-center bg-zinc-100 ">
+      <Main_template heading={"Our Services"} subheading="Experience unparalleled comfort and luxury with our top-notch facilities, personalized services, and world-class amenities tailored for your stay" img="https://www.linenservice.com/img/pics/services/hotel-linen-services.jpg" />
+      
         <div className="grid grid-cols-1 sm:grid-cols-2 w-[75%] md:grid-cols-3 lg:grid-cols-4 gap-8  ">
           {services.map((service, index) => (
             <Each_Service index={index} text={service.text} />
           ))}
         </div>
-      </div>
     </div>
   );
 };

@@ -9,7 +9,7 @@ const Navbar = () => {
   const hideBackground = true;
 
   const navRoutes = [
-    { name: 'Home', path: '/home', hlight: false },
+    { name: 'Home', path: '', hlight: false },
     { name: 'Amenities', path: '/amenities', hlight: false },
     { name: 'Services', path: '/services', hlight: false },
     { name: 'About Us', path: '/aboutus', hlight: false },
